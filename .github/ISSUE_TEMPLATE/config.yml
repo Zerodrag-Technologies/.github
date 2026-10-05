@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Zerodrag Technologies Support
+    url: https://github.com/Zerodrag-Technologies/.github/issues
+    about: Please use one of the issue templates below.

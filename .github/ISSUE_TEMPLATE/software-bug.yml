@@ -1,0 +1,53 @@
+name: Software Bug
+description: Report an issue with software or firmware
+labels:
+  - bug
+  - software
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please include steps to reproduce and, if this is firmware-related, hardware details as well.
+  - type: dropdown
+    id: subtype
+    attributes:
+      label: Area
+      description: What is affected?
+      options:
+        - Software
+        - Firmware
+        - Both
+    validations:
+      required: true
+  - type: input
+    id: project
+    attributes:
+      label: Project / module name
+      placeholder: e.g. sensor-firmware
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem description
+      description: What is happening and what did you expect instead?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      placeholder: 1. ...
+    validations:
+      required: true
+  - type: textarea
+    id: hardware
+    attributes:
+      label: Hardware details (required for firmware issues)
+      description: Fill this out if the issue involves firmware.
+      placeholder: Board revision, connected peripherals, power source, sensors, etc.
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs / screenshots
+      description: Add any relevant logs, screenshots, traces, or dumps.

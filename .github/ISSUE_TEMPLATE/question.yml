@@ -1,0 +1,40 @@
+name: Question
+description: Ask a question about hardware, software, or firmware projects
+labels:
+  - question
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Ask away — please include enough context to help us answer accurately.
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      description: What does your question relate to?
+      options:
+        - Hardware
+        - Software
+        - Firmware
+        - Cross-functional
+    validations:
+      required: true
+  - type: input
+    id: project
+    attributes:
+      label: Project / module name
+      placeholder: e.g. motor-controller
+    validations:
+      required: true
+  - type: textarea
+    id: question
+    attributes:
+      label: Your question
+      description: What would you like to know?
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Add links, screenshots, examples, or background info.

@@ -1,0 +1,51 @@
+name: Hardware Bug
+description: Report an issue with hardware designs, including KiCad projects
+labels:
+  - bug
+  - hardware
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please include enough detail for someone to reproduce or investigate the hardware issue.
+  - type: dropdown
+    id: subtype
+    attributes:
+      label: Hardware area
+      description: Which part of the hardware design is affected?
+      options:
+        - PCB
+        - Schematic
+        - BoM
+        - Assembly
+        - Mechanical
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: project
+    attributes:
+      label: Project / board name
+      placeholder: e.g. Power Controller Rev B
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem description
+      description: What is wrong and what did you expect instead?
+      placeholder: Describe the issue in detail.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence / references
+      description: Add links, screenshots, schematic pages, PCB refs, measurements, photos, or logs.
+      placeholder: Include relevant references.
+  - type: textarea
+    id: environment
+    attributes:
+      label: Context
+      description: Include relevant versions, manufacturing details, test setup, or constraints.
+      placeholder: e.g. KiCad version, PCB revision, assembly house, test conditions

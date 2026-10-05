@@ -1,0 +1,45 @@
+name: Feature Request
+description: Request a new feature or enhancement for hardware, software, or firmware
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Tell us what you want to build or improve and why it matters.
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      description: Which project area does this request apply to?
+      options:
+        - Hardware
+        - Software
+        - Firmware
+        - Cross-functional
+    validations:
+      required: true
+  - type: input
+    id: project
+    attributes:
+      label: Project / module name
+      placeholder: e.g. main-control-board
+    validations:
+      required: true
+  - type: textarea
+    id: request
+    attributes:
+      label: Requested change
+      description: Describe the feature or improvement.
+    validations:
+      required: true
+  - type: textarea
+    id: rationale
+    attributes:
+      label: Why is this needed?
+      description: Explain the problem this solves or the value it adds.
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Optional: describe any alternatives or workarounds.
