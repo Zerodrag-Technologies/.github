@@ -1,8 +1,9 @@
-name: Software Bug
+name: Software/Firmware Bug
 description: Report an issue with software or firmware
 labels:
   - bug
   - software
+  - firmware
 body:
   - type: markdown
     attributes:
@@ -11,7 +12,7 @@ body:
   - type: dropdown
     id: subtype
     attributes:
-      label: Area
+      label: Issue Scope
       description: What is affected?
       options:
         - Software
@@ -20,23 +21,23 @@ body:
     validations:
       required: true
   - type: input
-    id: project
+    id: version
     attributes:
-      label: Project / module name
-      placeholder: e.g. sensor-firmware
+      label: Version
+      placeholder: V0.1, V2.0.3 etc.
     validations:
       required: true
   - type: textarea
     id: problem
     attributes:
-      label: Problem description
+      label: Problem Description
       description: What is happening and what did you expect instead?
     validations:
       required: true
   - type: textarea
     id: reproduce
     attributes:
-      label: Steps to reproduce
+      label: Steps to Reproduce
       placeholder: 1. ...
     validations:
       required: true
@@ -49,5 +50,5 @@ body:
   - type: textarea
     id: logs
     attributes:
-      label: Logs / screenshots
+      label: Logs / Screenshots
       description: Add any relevant logs, screenshots, traces, or dumps.
