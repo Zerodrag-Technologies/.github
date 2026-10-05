@@ -10,7 +10,7 @@ body:
   - type: dropdown
     id: area
     attributes:
-      label: Area
+      label: Scope
       description: What does your question relate to?
       options:
         - Hardware
@@ -19,22 +19,15 @@ body:
         - Cross-functional
     validations:
       required: true
-  - type: input
-    id: project
-    attributes:
-      label: Project / module name
-      placeholder: e.g. motor-controller
-    validations:
-      required: true
   - type: textarea
     id: question
     attributes:
-      label: Your question
+      label: Your Question
       description: What would you like to know?
     validations:
       required: true
   - type: textarea
     id: context
     attributes:
-      label: Additional context
+      label: Additional Context
       description: Add links, screenshots, examples, or background info.
