@@ -47,12 +47,6 @@ body:
   - type: textarea
     id: evidence
     attributes:
-      label: Evidence / references
+      label: Evidence / References
       description: Add links, screenshots, schematic pages, PCB refs, measurements, photos, or logs.
       placeholder: Include relevant references.
-  - type: textarea
-    id: environment
-    attributes:
-      label: Context
-      description: Include relevant versions, manufacturing details, test setup, or constraints.
-      placeholder: e.g. KiCad version, PCB revision, assembly house, test conditions
