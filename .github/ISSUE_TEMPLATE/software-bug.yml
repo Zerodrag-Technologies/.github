@@ -44,7 +44,7 @@ body:
   - type: textarea
     id: hardware
     attributes:
-      label: Hardware details (required for firmware issues)
+      label: Hardware Details
       description: Fill this out if the issue involves firmware.
       placeholder: Board revision, connected peripherals, power source, sensors, etc.
   - type: textarea
