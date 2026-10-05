@@ -1,5 +1,5 @@
 name: Hardware Bug
-description: Report an issue with hardware designs, including KiCad projects
+description: Report an issue with hardware designs.
 labels:
   - bug
   - hardware
@@ -23,10 +23,17 @@ body:
     validations:
       required: true
   - type: input
-    id: project
+    id: variant
     attributes:
-      label: Project / board name
-      placeholder: e.g. Power Controller Rev B
+      label: Variant
+      placeholder: e.g. D1, D2 etc.
+    validations:
+      required: true
+  - type: input
+    id: revision
+    attributes:
+      label: Revision
+      placeholder: e.g. R0.1, R0.2, R0.2B etc.
     validations:
       required: true
   - type: textarea
