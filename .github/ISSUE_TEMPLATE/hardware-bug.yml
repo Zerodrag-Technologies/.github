@@ -11,7 +11,7 @@ body:
   - type: dropdown
     id: subtype
     attributes:
-      label: Hardware area
+      label: Issue Scope
       description: Which part of the hardware design is affected?
       options:
         - PCB
