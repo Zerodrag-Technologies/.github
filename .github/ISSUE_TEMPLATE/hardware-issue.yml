@@ -1,4 +1,4 @@
-name: Hardware Bug
+name: Hardware Issue
 description: Report an issue with hardware designs.
 labels:
   - bug
